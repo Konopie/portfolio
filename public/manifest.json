@@ -40,6 +40,14 @@
     {
       "src": "day-scheduler.png",
       "type": "image/png"
+    },
+    {
+      "src":"handsome.png",
+      "type": "image/png"
+    },
+    {
+      "src": "name-plate.png",
+      "type": "image/png"
     }
   ],
   "start_url": ".",

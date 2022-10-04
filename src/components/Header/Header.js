@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import Nav from '../Nav/Nav'
 import { capitalizeFirstLetter } from '../../utils/helpers';
 
 function Header(props) {
@@ -17,30 +18,13 @@ function Header(props) {
       return (
         <header>
             <h1 className='Header'>Cody Cooper</h1>
-          <nav>
-            <ul className="flex-row">
-              <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-                <a onClick={() => setContactSelected(true)}>Contact</a>
-              </li>
-              {categories.map((category) => (
-                <li
-                  className={`mx-1 ${
-                    currentCategory.name === category.name && !contactSelected && 'navActive'
-                    }`}
-                  key={category.name}
-                >
-                  <a
-                    onClick={() => {
-                      setCurrentCategory(category);
-                      setContactSelected(false);
-                    }}
-                  >
-                    {capitalizeFirstLetter(category.name)}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
+          <Nav
+            categories={categories}
+            setCurrentCategory={setCurrentCategory}
+            currentCategory={currentCategory}
+            contactSelected={contactSelected}
+            setContactSelected={setContactSelected}
+          ></Nav>
         </header>
   );
 }

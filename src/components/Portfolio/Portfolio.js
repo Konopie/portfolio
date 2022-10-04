@@ -40,7 +40,7 @@ const ProjectList = () => {
 
   return (
     
-      <div className="flex-row">
+      <div className="flex-row project-container" >
         {currentProjects.map((project, i) => (
           <img
             src={require(`../../assets/${project.src}`)}

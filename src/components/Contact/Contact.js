@@ -38,7 +38,7 @@ function ContactForm() {
 
   return (
     <section>
-      <h1 data-testid="h1tag">Contact me</h1>
+      <h1 data-testid="h1tag" className="cursive">Contact me</h1>
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
@@ -57,8 +57,13 @@ function ContactForm() {
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button data-testid="button" type="submit">Submit</button>
+        <button data-testid="button" className='submit' type="submit">Submit</button>
       </form>
+      <br></br>
+        <br></br>
+        <br></br><br></br>
+        <br></br>
+        <br></br><br></br>
     </section>
   );
 }

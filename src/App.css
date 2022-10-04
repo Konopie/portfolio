@@ -42,9 +42,16 @@
 }
 
 .img{
-  width: 42vw;
-  height: 15vw;
-  margin: 10px;
+  width: 26rem;
+  height: 12rem;
+  margin: 2vw;
+  flex: 1 1 auto;
+}
+
+.project-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 * {
@@ -63,19 +70,23 @@ overflow-x: hidden; /* to stop horizontal scroll*/
 }
 
 section {
-  padding: 42.0px;
+  padding: 4.20px;
   scroll-margin-top: 4.20rem; /* to stop the anchor links disapparing behind sticky header */
 }
 
 h1 {
   font-weight: bolder;
-  font-size: 3vw;
+  font-size: 3rem;
   text-align: center;
-  padding-bottom: 24px;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
 }
 
 p {
-  font-size: 2vw;
+  font-size: 2rem;
   text-align: center;
   padding-bottom: 20px
 }
@@ -145,7 +156,7 @@ header nav ul li a:hover {
 
 footer {
   background: var(--secondary-color);
-  width: 100%;
+  width: 110%;
   margin: 0 -30px 0 0;
 }
 
@@ -159,7 +170,7 @@ footer h2 {
 
 /* about me css start */
 .about {
-  font-size: 1.55vw
+  font-size: 5vh
 }
 
 
@@ -190,7 +201,108 @@ textarea {
   border: 3px solid #cccccc;
   padding: 5px;
 }
+.list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
 
-.contact { 
-  justify-content: center;
+.list-item {
+  display:flex;
+  flex: 1 1 auto;
+  flex-direction: row;
+  list-style: none;
+  padding: 0px 50px;
+  margin: 10px;
+  /* padding: 0rem 4.20rem; */
+}
+
+.list-link {
+  font-weight: bold;
+  padding: 0px 15px;
+  font-weight: lighter;
+  font-size: 2.22vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  color: var(--tertiary-color);
+}
+
+.list-link:hover {
+  background: var(--tertiary-color);
+  color: var(--secondary-color);
+  border-radius: 15px;
+  text-shadow: none;
+}
+
+button {
+  background: var(--secondary-color);
+  color: var(--tertiary-color);
+  border-radius: 15px;
+  padding: 10px;
+  border: none
+}
+
+button:hover {
+  background: var(--tertiary-color);
+  color: var(--secondary-color);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.handsome {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 15rem;
+  margin-bottom: 2rem;
+}
+
+.cursive {
+  font-family: "garamond"
+}
+
+a {
+  font-weight: bold;
+  padding: 0px 15px;
+  font-weight: lighter;
+  font-size: 2.22vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  color: var(--tertiary-color);
+}
+
+h2 {
+  font-family: "garamond";
+  font-size: 1.55rem;
+}
+
+.namePlate {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 3rem;
+  margin-bottom: 10px;
+}
+
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex-shrink: 0;
+}
+
+#resume-link {
+  font-size: 2rem;
+}
+
+#contact-form {
+  margin-left: 2rem;
 }
