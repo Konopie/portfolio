@@ -7,32 +7,38 @@ const ProjectList = () => {
     {
       name: 'Run Buddy',
       link: 'https://konopie.github.io/run-buddy/',
-      src: 'run-buddy.png'
+      src: 'run-buddy',
+      github: 'https://github.com/Konopie/run-buddy'
     },
     {
       name: 'Cat Generator',
       link: 'https://konopie.github.io/cat-generator/',
-      src: 'cat-genie.png'
+      src: 'cat-genie',
+      github: 'https://github.com/Konopie/cat-generator'
     },
     {
       name: 'Hungry Guys',
       link: 'https://hungry-guys.herokuapp.com/',
-      src: 'hungry-guys.png'
+      src: 'hungry-guys',
+      github: 'https://github.com/Konopie/hungry-guys'
     },
     {
       name: 'Just Another Text Editor',
       link: 'https://konopies-text-editor.herokuapp.com/',
-      src: 'JATE.png'
+      src: 'JATE',
+      github: 'https://github.com/Konopie/text-editor'
     },
     {
       name: 'Note Taker',
       link: 'https://tranquil-shore-49299.herokuapp.com/',
-      src: 'note-taker.png'
+      src: 'note-taker',
+      github: 'https://github.com/Konopie/note-taker'
     },
     {
       name: 'Work Day Scheduler',
       link: 'https://konopie.github.io/Day-Scheduler/',
-      src: 'day-scheduler.png'
+      src: 'day-scheduler',
+      github: 'https://github.com/Konopie/Day-Scheduler'
     }
   ];
 
@@ -42,13 +48,19 @@ const ProjectList = () => {
     
       <div className="flex-row project-container" >
         {currentProjects.map((project, i) => (
-          <img
+          <section className="container">
+          <div className={`img ${project.src}`}>
+          <a className='portfolio-link' href = {`${project.link}`}>Website</a>
+          <a className='portfolio-link' href = {`${project.github}`}>GitHub</a>
+          {/* <img
             src={require(`../../assets/${project.src}`)}
             alt={project.name}
-            className={`img `}
+            className={`img`}
             onClick={()=>{window.location.href = `${project.link}`;}}
             key={project.name}
-          />
+          /> */}
+          </div>
+          </section>
         ))}
       </div>
   );

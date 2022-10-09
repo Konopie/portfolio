@@ -7,7 +7,7 @@ function Nav() {
     <h2>Made With 💕 By Cody Cooper</h2>
     <ul className="list-container ">
         <li className='list-item'>
-            <a className='list-link' href="mailto:codycooper06@gmail.com">codycooper06@gmail.com</a>
+            <a className='list-link' href="https://stackoverflow.com/users/18122763/konopi">Stack Overflow</a>
         </li>
         <li className='list-item'>
             <a className='list-link' href="https://github.com/Konopie">GitHub</a>
