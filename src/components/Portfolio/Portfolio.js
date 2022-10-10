@@ -35,11 +35,11 @@ const ProjectList = () => {
       github: 'https://github.com/Konopie/note-taker'
     },
     {
-      name: 'Work Day Scheduler',
-      link: 'https://konopie.github.io/Day-Scheduler/',
-      src: 'day-scheduler',
-      github: 'https://github.com/Konopie/Day-Scheduler'
-    }
+      name: 'Football Fantasy',
+      link: 'https://fantasy-football-draft-app.herokuapp.com/',
+      src: 'football-fantasy',
+      github: 'https://github.com/MosNes/fantasy-football-draft'
+    },
   ];
 
   const currentProjects = Projects
