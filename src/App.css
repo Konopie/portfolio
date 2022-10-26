@@ -335,7 +335,15 @@ body {
 }
 
 .img:hover {
-  opacity: .5;
+  filter: brightness(1.25)
+}
+
+.img p{
+  display: none
+}
+
+.img:hover p{
+  display: block
 }
 
 .container {
@@ -348,11 +356,20 @@ body {
 }
 
 .portfolio-link {
-  color: yellow
+  color: yellow;
+  text-shadow: 1px 1px 5px black;
 }
 
 .portfolio-link:hover {
-  border: 1px solid black;
-  background-color: grey;
+  /* border: 1px solid black; */
+  background-color: rgba(98, 97, 97, 0.9);
+  border-radius: 15px;
+}
+
+.portfolio-desc {
+  font-size: 1.5rem;
+  padding-bottom: 0px;
+  /* border: 1px solid black; */
+  background-color: rgba(98, 97, 97, 0.9);
   border-radius: 15px;
 }
